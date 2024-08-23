@@ -241,7 +241,10 @@ let package = Package(
         "json/wsjcpp.yml",
       ],
       sources: ["EmptySwiftPackageManagerFile.cpp"],
-      publicHeadersPath: "json/include"
+      publicHeadersPath: "json/include",
+      cxxSettings: [
+        .headerSearchPath("json/include")
+      ]
     ),
     .target(
       name: "protobuf",
