@@ -40,12 +40,12 @@ let package = Package(
   dependencies: [
     // Dependencies declare other packages that this package depends on.
     .package(
-      url: "https://github.com/bourdakos1/abseil-cpp-SwiftPM.git",
-      branch: "cxx17-test"
+      url: "https://github.com/monchote/abseil-cpp-SwiftPM.git",
+      exact: "0.20240830.0"
     ),
     .package(
-      url: "https://github.com/firebase/boringssl-SwiftPM.git",
-      "0.7.1"..<"0.8.0"
+      url: "https://github.com/monchote/boringssl-SwiftPM.git",
+      exact: "0.7.3"
     ),
   ],
   targets: [
@@ -187,9 +187,7 @@ let package = Package(
       dependencies: [
         "protobuf",
         .product(name: "AbseilCXX17", package: "abseil-cpp-SwiftPM"),
-        .product(
-          name: "openssl_grpc", package: "boringssl-SwiftPM",
-          moduleAliases: ["openssl_grpc": "NearbySSL"]),
+        .product(name: "NearbySSL", package: "boringssl-SwiftPM"),
       ],
       path: "third_party/ukey2",
       exclude: [
