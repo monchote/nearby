@@ -17,7 +17,7 @@
 [submodule "third_party/ukey2/ukey2"]
 	path = third_party/ukey2/ukey2
 	url = https://github.com/monchote/ukey2
-	branch = master
+	branch = test1
 [submodule "third_party/smhasher/smhasher"]
 	path = third_party/smhasher/smhasher
 	url = https://github.com/aappleby/smhasher
