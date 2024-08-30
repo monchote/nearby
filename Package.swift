@@ -45,7 +45,7 @@ let package = Package(
     ),
     .package(
       url: "https://github.com/firebase/boringssl-SwiftPM.git",
-      "0.7.1"..<"0.8.0"
+      "0.32.0"..<"0.33.0"
     ),
   ],
   targets: [
