@@ -41,7 +41,7 @@ let package = Package(
     // Dependencies declare other packages that this package depends on.
     .package(
       url: "https://github.com/monchote/abseil-cpp-SwiftPM.git",
-      branch: "0.20240830.0"
+      exact: "0.20240830.0"
     ),
     .package(
       url: "https://github.com/monchote/boringssl-SwiftPM.git",
