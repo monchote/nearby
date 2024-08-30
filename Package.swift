@@ -189,7 +189,7 @@ let package = Package(
         .product(name: "AbseilCXX17", package: "abseil-cpp-SwiftPM"),
         .product(
           name: "openssl_grpc", package: "boringssl-SwiftPM",
-          moduleAliases: ["NearbySSL": "openssl_grpc"]),
+          moduleAliases: ["openssl_grpc": "NearbySSL"]),
       ],
       path: "third_party/ukey2",
       exclude: [
